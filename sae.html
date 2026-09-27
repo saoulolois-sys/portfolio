@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Le Laboratoire : carnets d'expériences des SAÉ du BUT MMI, analyses réflexives de Lilo, étudiant en Création Numérique.">
+  <title>SAÉ · Le Laboratoire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;600;700&family=Jost:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/logo-opao.png" alt="OPAO Motion"></a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="sae.html" class="active">SAÉ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== TITRE ===== -->
+  <section class="hero-claim dots">
+    <div class="container">
+      <span class="script reveal">le carnet d'expériences</span>
+      <h1 class="reveal">Une année en<br><span class="o">six projets</span></h1>
+    </div>
+  </section>
+
+  <!-- ===== CARNETS ===== -->
+  <section>
+    <div class="container">
+
+      <!-- ===== SAE 301 ===== -->
+      <article class="carnet reveal" id="sae301">
+        <div class="carnet-head" role="button" tabindex="0">
+          <figure><img src="assets/sae301.png" onerror="this.onerror=null;this.src='https://d8j0ntlcm91z4.cloudfront.net/user_2vNFJg4NA3SqAF7NmRoycnlvAan/hf_20260901_222343_154cb39f-d40a-4a13-9cda-e4032b94fe2f.png'" alt="Illustration craie : panier solidaire et maquette de site web"></figure>
+          <div class="meta">
+            <div class="sae-num">SAÉ 301</div>
+            <h3>La plateforme solidaire EPISE</h3>
+            <p class="pitch">Concevoir et développer, en équipe agile de quatre, la plateforme
+            de dons de l'épicerie solidaire des étudiants de l'UNC : trois profils
+            d'utilisateurs, un tunnel de réservation et un back-office sécurisé.</p>
+            <div class="ac-badges">
+              <span class="ac">AC22.02 : Produire une recommandation ergonomique à partir des tests utilisateurs (sur système fonctionnel, prototype ou maquette interactive)</span>
+              <span class="ac">AC24.02 : Mettre en place ou développer un back office</span>
+            </div>
+            <span class="toggle">+</span>
+          </div>
+        </div>
+        <div class="carnet-body">
+          <div class="inner">
+            <div class="qa media-block">
+              <h4>Le projet en images</h4>
+              <div class="carousel">
+                <button class="car-btn prev" type="button" aria-label="Précédent">&#8249;</button>
+                <div class="car-track">
+                <figure class="car-item"><img src="media/SAE%20301/Capture%20d’écran%202026-09-27%20à%2021.34.01.png" alt="" loading="lazy"></figure>
+                <figure class="car-item"><img src="media/SAE%20301/Capture%20d’écran%202026-09-27%20à%2021.34.07.png" alt="" loading="lazy"></figure>
+                <figure class="car-item"><img src="media/SAE%20301/Capture%20d’écran%202026-09-27%20à%2021.34.50.png" alt="" loading="lazy"></figure>
+                <figure class="car-item"><img src="media/SAE%20301/Capture%20d’écran%202026-09-27%20à%2021.34.55.png" alt="" loading="lazy"></figure>
+                <figure class="car-item"><img src="media/SAE%20301/Capture%20d’écran%202026-09-27%20à%2021.35.17.png" alt="" loading="lazy"></figure>
+                </div>
+                <button class="car-btn next" type="button" aria-label="Suivant">&#8250;</button>
+              </div>
+            </div>
+            <div class="qa">
+              <h4>1. La pièce maîtresse</h4>
+              <p>Sur ce projet, je devais surtout montrer que je savais concevoir des
+              parcours différents selon le profil connecté (donneur, bénéficiaire ou
+              gestionnaire) et les développer proprement en MVC. C'est ce qui rendait
+              le sujet intéressant : un même site devait servir des usages qui n'ont
+              pas grand-chose en commun.</p>
+            </div>
+            <div class="qa">
+              <h4>2. Où l'engrenage a grippé</h4>
+              <p>La vraie difficulté a été de coder à quatre. Comme la répartition du
+              travail devait être équivalente entre les membres, chacun avançait dans
+              son coin et nos branches Git ont fini par diverger. On n'avait pas les
+              mêmes conventions de nommage, nos contrôleurs ne suivaient pas la même
+              logique, et le tunnel de réservation fonctionnait chez certains mais pas
+              chez d'autres. On a perdu plusieurs jours à réconcilier tout ça.</p>
+            </div>
+            <div class="qa">
+              <h4>3. L'étincelle</h4>
+              <p>On a fini par bloquer une matinée pour se mettre d'accord sur une
+              structure MVC commune, le nommage des routes et des revues de code avant
+              chaque merge, puis on a redécoupé le backlog Notion en user stories
+              vraiment indépendantes. Après ça, l'architecture a tenu jusqu'au rendu
+              et le back-office s'est branché sur les parcours sans nouveau conflit.</p>
+            </div>
+            <div class="qa">
+              <h4>4. Le réglage pour la suite</h4>
+              <p>Sur le prochain projet de groupe, je poserai la convention de code par
+              écrit dès le premier jour et je la ferai valider par tout le monde avant
+              d'ouvrir le moindre fichier. Ça nous aurait évité une bonne partie des
+              fusions douloureuses de fin de projet.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ===== SAE 302 ===== -->
+      <article class="carnet reveal" id="sae302">
+        <div class="carnet-head" role="button" tabindex="0">
+          <figure><img src="assets/sae302.png" onerror="this.onerror=null;this.src='https://d8j0ntlcm91z4.cloudfront.net/user_2vNFJg4NA3SqAF7NmRoycnlvAan/hf_20260901_222343_12afc8fb-233d-47c3-9375-6d184dc175d5.png'" alt="Illustration craie : loupe sur des archives anciennes, QR code et voilier"></figure>
+          <div class="meta">
+            <div class="sae-num">SAÉ 302</div>
+            <h3>Le Dossier Charmier, jeu de piste immersif</h3>
+            <p class="pitch">Un jeu de piste historique sur le campus de l'UNC : QR codes,
+            vidéos et archives pour reconstituer l'histoire vraie d'Émile Charmier,
+            évadé du bagne de Nouville en 1879. Conçu en équipe avec Irène, Shanice
+            et Jimmy.</p>
+            <div class="ac-badges">
+              <span class="ac">AC23.04 : Imaginer, écrire et scénariser en vue d’une communication multimédia ou transmédia</span>
+              <span class="ac">AC23.05 : Réaliser, composer et produire pour une communication plurimédia</span>
+            </div>
+            <span class="toggle">+</span>
+          </div>
+        </div>
+        <div class="carnet-body">
+          <div class="inner">
+            <div class="qa media-block">
+              <h4>Le projet en images</h4>
+              <div class="carousel">
+                <button class="car-btn prev" type="button" aria-label="Précédent">&#8249;</button>
+                <div class="car-track">
+                <figure class="car-item"><img src="media/SAE%20302/Carte%20pirate-web.jpg" alt="" loading="lazy"></figure>
+                <figure class="car-item"><img src="media/SAE%20302/Affiche%20du%20Jeu.png" alt="" loading="lazy"></figure>
+                <figure class="car-item"><video src="media/SAE%20302/Trailer%20et%20intro-web.mp4" controls preload="metadata"></video></figure>
+                <figure class="car-item"><img src="media/SAE%20302/Capture%20d’écran%202026-09-27%20à%2021.39.04.png" alt="" loading="lazy"></figure>
+                <figure class="car-item"><img src="media/SAE%20302/Capture%20d’écran%202026-09-27%20à%2021.40.06.png" alt="" loading="lazy"></figure>
+                </div>
+                <button class="car-btn next" type="button" aria-label="Suivant">&#8250;</button>
+              </div>
+            </div>
+            <div class="qa">
+              <h4>1. La pièce maîtresse</h4>
+              <p>Ici, je devais surtout travailler l'écriture et la scénarisation
+              transmédia. On tenait une histoire vraie, celle d'Émile Charmier et de
+              ses quatorze années dont on ne sait rien, et il fallait en faire une
+              enquête jouable sur le campus, avec des vidéos, de l'audio et des QR
+              codes disséminés dans des lieux réels.</p>
+            </div>
+            <div class="qa">
+              <h4>2. Où l'engrenage a grippé</h4>
+              <p>Notre premier scénario était trop ambitieux. On avait empilé les énigmes
+              et les supports, et dès la deuxième activité les testeurs ne voyaient
+              plus ce que l'énigme qu'ils venaient de résoudre apportait à l'histoire.
+              En fait, on avait écrit un scénario qui nous plaisait à nous, sans
+              vérifier qu'il restait lisible pour quelqu'un qui le découvre.</p>
+            </div>
+            <div class="qa">
+              <h4>3. L'étincelle</h4>
+              <p>On a repris le parcours en s'imposant une règle empruntée au game
+              design : chaque activité réussie doit immédiatement faire avancer le
+              récit. Le jeu a été resserré sur quatre lieux (le bagne, la BU, l'IUT et
+              le théâtre de l'Île), et à chaque étape l'enquêteur Richard Bartle
+              revient en vidéo ou en audio pour révéler un morceau de l'histoire et
+              relancer les joueurs. À partir de là, l'immersion a pris.</p>
+            </div>
+            <div class="qa">
+              <h4>4. Le réglage pour la suite</h4>
+              <p>Je fais maintenant tester mes scénarios à quelqu'un d'extérieur dès la
+              première version papier, avant de produire le moindre média. Si je dois
+              expliquer le récit à l'oral pour qu'il fonctionne, c'est qu'il n'est pas
+              prêt.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ===== SAE 303 ===== -->
+      <article class="carnet reveal" id="sae303">
+        <div class="carnet-head" role="button" tabindex="0">
+          <figure><img src="assets/sae303.png" onerror="this.onerror=null;this.src='https://d8j0ntlcm91z4.cloudfront.net/user_2vNFJg4NA3SqAF7NmRoycnlvAan/hf_20260901_222343_e3b99530-1a19-459a-9662-8d9848ff9ae1.png'" alt="Illustration craie : graphiques de données reliés à des îles du Pacifique"></figure>
+          <div class="meta">
+            <div class="sae-num">SAÉ 303</div>
+            <h3>Dataviz · Pacific Dataviz Challenge</h3>
+            <p class="pitch">En binôme : analyser des jeux de données du Pacifique, en tirer
+            une histoire, et la raconter sur un site web mêlant vidéo motion design
+            et graphiques interactifs enchaînés, soumis au jury du Pacific Dataviz
+            Challenge de la CPS.</p>
+            <div class="ac-badges">
+              <span class="ac">AC21.03 : Traiter des données avec des outils statistiques pour faciliter leur analyse et leur exploitation</span>
+              <span class="ac">AC23.06 : Élaborer et produire des animations, des designs sonores, des effets spéciaux, de la visualisation de données ou de la 3D</span>
+            </div>
+            <span class="toggle">+</span>
+          </div>
+        </div>
+        <div class="carnet-body">
+          <div class="inner">
+            <div class="qa media-block">
+              <h4>Le projet en images</h4>
+              <div class="carousel">
+                <button class="car-btn prev" type="button" aria-label="Précédent">&#8249;</button>
+                <div class="car-track">
+                <figure class="car-item"><img src="media/SAE%20303/Capture%20d’écran%202026-09-27%20à%2021.42.54.png" alt="" loading="lazy"></figure>
+                <figure class="car-item"><img src="media/SAE%20303/Capture%20d’écran%202026-09-27%20à%2021.43.03.png" alt="" loading="lazy"></figure>
+                <figure class="car-item"><img src="media/SAE%20303/Capture%20d’écran%202026-09-27%20à%2021.43.38.png" alt="" loading="lazy"></figure>
+                <figure class="car-item"><img src="media/SAE%20303/Capture%20d’écran%202026-09-27%20à%2021.43.48.png" alt="" loading="lazy"></figure>
+                <figure class="car-item"><img src="media/SAE%20303/Capture%20d’écran%202026-09-27%20à%2021.44.02.png" alt="" loading="lazy"></figure>
+                <figure class="car-item"><img src="media/SAE%20303/Capture%20d’écran%202026-09-27%20à%2021.44.13.png" alt="" loading="lazy"></figure>
+                </div>
+                <button class="car-btn next" type="button" aria-label="Suivant">&#8250;</button>
+              </div>
+            </div>
+            <div class="qa">
+              <h4>1. La pièce maîtresse</h4>
+              <p>L'enjeu était de produire des visualisations qui apportent réellement
+              une information, et pas seulement de jolis graphiques : faire parler des
+              jeux de données du Pacifique sur un site aux graphiques enchaînés,
+              introduit par une vidéo d'accroche en motion design.</p>
+            </div>
+            <div class="qa">
+              <h4>2. Où l'engrenage a grippé</h4>
+              <p>J'ai d'abord abordé le sujet en graphiste. Mes premières visualisations
+              étaient soignées mais ne racontaient rien : on voyait des chiffres sans
+              comprendre pourquoi ils comptaient. La vidéo partait de son côté, le
+              site du sien, et le message d'ensemble se diluait.</p>
+            </div>
+            <div class="qa">
+              <h4>3. L'étincelle</h4>
+              <p>Avec mon binôme, on a fini par écrire noir sur blanc ce que le visiteur
+              devait retenir au bout de dix secondes, et on a reconstruit le site
+              autour de cette idée. Les indicateurs qui ne la servaient pas ont sauté,
+              les graphiques se sont mis à s'enchaîner comme les chapitres d'un même
+              récit et la vidéo a enfin joué son rôle de bande-annonce.</p>
+            </div>
+            <div class="qa">
+              <h4>4. Le réglage pour la suite</h4>
+              <p>Depuis, j'écris le message en une phrase avant d'ouvrir un outil, en
+              dataviz comme en vidéo. Dit comme ça, ça paraît évident, mais c'est
+              exactement ce qui m'a manqué au démarrage de ce projet.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ===== SAE 401 ===== -->
+      <article class="carnet reveal" id="sae401">
+        <div class="carnet-head" role="button" tabindex="0">
+          <figure><img src="assets/sae401.png" onerror="this.onerror=null;this.src='https://d8j0ntlcm91z4.cloudfront.net/user_2vNFJg4NA3SqAF7NmRoycnlvAan/hf_20260901_222343_125fc97f-7113-42f7-bc17-4ca69770286b.png'" alt="Illustration craie : dés, cartes à jouer, meeple et panier e-commerce"></figure>
+          <div class="meta">
+            <div class="sae-num">SAÉ 401</div>
+            <h3>Ludik, plateforme événementielle</h3>
+            <p class="pitch">En équipe de consultants, répondre à un vrai client : concevoir
+            la plateforme e-commerce qui valorise les événements et animations de
+            Ludik (calendrier, réservation, paiement) et définir la stratégie de
+            communication de son lancement.</p>
+            <div class="ac-badges">
+              <span class="ac">AC22.03 : Co-construire une recommandation stratégique (en structurant un plan d’action)</span>
+              <span class="ac">AC22.01 : Co-concevoir un produit ou un service (proposition de valeur, fonctionnalités...)</span>
+            </div>
+            <span class="toggle">+</span>
+          </div>
+        </div>
+        <div class="carnet-body">
+          <div class="inner">
+            <div class="qa media-block">
+              <h4>Le projet en images</h4>
+              <div class="carousel">
+                <button class="car-btn prev" type="button" aria-label="Précédent">&#8249;</button>
+                <div class="car-track">
+                <figure class="car-item"><img src="media/SAE%20401/Capture%20d’écran%202026-09-27%20à%2021.46.50.png" alt="" loading="lazy"></figure>
+                <figure class="car-item"><img src="media/SAE%20401/Capture%20d’écran%202026-09-27%20à%2021.47.11.png" alt="" loading="lazy"></figure>
+                <figure class="car-item"><img src="media/SAE%20401/Capture%20d’écran%202026-09-27%20à%2021.47.23.png" alt="" loading="lazy"></figure>
+                </div>
+                <button class="car-btn next" type="button" aria-label="Suivant">&#8250;</button>
+              </div>
+            </div>
+            <div class="qa">
+              <h4>1. La pièce maîtresse</h4>
+              <p>On intervenait comme une petite agence face à un vrai commanditaire.
+              Au-delà des maquettes, je devais contribuer à une recommandation
+              stratégique qui tienne la route : comprendre l'activité de Ludik, ses
+              deux magasins, son Prestashop déjà en place et sa communauté Facebook,
+              puis défendre une solution réaliste en soutenance.</p>
+            </div>
+            <div class="qa">
+              <h4>2. Où l'engrenage a grippé</h4>
+              <p>On a foncé vers la solution beaucoup trop vite. Nos premières pistes
+              refaisaient ce que le Prestashop proposait déjà, alors que le problème
+              du client était ailleurs : ses événements se perdaient dans le fil
+              Facebook. On avait sous-estimé la phase d'enquête, en oubliant qu'un
+              client exprime un besoin et rarement un cahier des charges.</p>
+            </div>
+            <div class="qa">
+              <h4>3. L'étincelle</h4>
+              <p>On est repartis de la démarche UX vue en cours, avec une vraie analyse
+              de l'existant, des personas de joueurs et de familles et un parcours de
+              réservation type. Vu sous cet angle, la réponse est devenue évidente :
+              un espace dédié aux événements, avec calendrier, réservation et paiement,
+              qui complète la boutique au lieu de la concurrencer, et une communication
+              où Facebook sert de porte d'entrée vers la plateforme.</p>
+            </div>
+            <div class="qa">
+              <h4>4. Le réglage pour la suite</h4>
+              <p>Avant de proposer quoi que ce soit à un client, je reformule maintenant
+              son problème avec mes mots et je le lui fais valider. C'est l'étape
+              qu'on avait sautée, et elle nous a coûté nos deux premières semaines.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ===== SAE 402 ===== -->
+      <article class="carnet reveal" id="sae402">
+        <div class="carnet-head" role="button" tabindex="0">
+          <figure><img src="assets/sae402.png" onerror="this.onerror=null;this.src='https://d8j0ntlcm91z4.cloudfront.net/user_2vNFJg4NA3SqAF7NmRoycnlvAan/hf_20260909_042102_ccc49605-54db-4a2f-b29e-7d25e7963a36.png'" alt="Illustration craie : écran de cinéma en plein air au bord du récif, bobine de film, coraux et poissons"></figure>
+          <div class="meta">
+            <div class="sae-num">SAÉ 402</div>
+            <h3>Festival RÉCIF, communication plurimédia</h3>
+            <p class="pitch">Communiquer sur la 2<sup>e</sup> édition du festival RÉCIF
+            (Réalisateurs Émergents, Cinéma International &amp; Films du Pacifique),
+            du 30 octobre au 21 novembre 2026 : concours, ateliers « 1, 2, 3 Pitchez »,
+            causeries et capsules vidéo, pour faire rayonner le cinéma émergent dans
+            les trois provinces.</p>
+            <div class="ac-badges">
+              <span class="ac">AC23.05 : Réaliser, composer et produire pour une communication plurimédia</span>
+              <span class="ac">AC23.02 : Définir une iconographie (illustrations, photographies, vidéos)</span>
+            </div>
+            <span class="toggle">+</span>
+          </div>
+        </div>
+        <div class="carnet-body">
+          <div class="inner">
+            <div class="qa media-block">
+              <h4>Le projet en images</h4>
+              <div class="carousel">
+                <button class="car-btn prev" type="button" aria-label="Précédent">&#8249;</button>
+                <div class="car-track">
+                <figure class="car-item"><img src="media/SAE%20402/Logo%20Recif.png" alt="" loading="lazy"></figure>
+                <figure class="car-item"><video src="media/SAE%20402/video%20recif%202-web.mp4" controls preload="metadata"></video></figure>
+                <figure class="car-item"><video src="media/SAE%20402/video%20recif%201%20bobby-web.mp4" controls preload="metadata"></video></figure>
+                </div>
+                <button class="car-btn next" type="button" aria-label="Suivant">&#8250;</button>
+              </div>
+            </div>
+            <div class="qa todo">
+              ✏️ Projet en cours (le festival se tient du 30 octobre au 21 novembre 2026) :
+              ce carnet est une première version, à ajuster au fil du projet et après la
+              soutenance.
+            </div>
+            <div class="qa">
+              <h4>1. La pièce maîtresse</h4>
+              <p>Ma mission principale : produire une communication qui donne envie de
+              participer aux temps forts du festival, en particulier ses cinq concours
+              (Sélection Pacifique, Toujours plus courts, Jeunes talents, 1, 2, 3
+              Filmez et 1, 2, 3 Pitchez), ses ateliers et ses causeries, sous forme de
+              posts et de capsules vidéo qui restent fidèles à l'identité visuelle du
+              festival.</p>
+            </div>
+            <div class="qa">
+              <h4>2. Où l'engrenage a grippé</h4>
+              <p>Ce qui nous a le plus gênés au départ, c'est la masse d'informations à
+              transmettre, entre les concours, les ateliers, les causeries, les invités
+              et des projections programmées dans toute la Nouvelle-Calédonie. Nos
+              premières propositions cherchaient à tout annoncer en même temps et le
+              message se noyait. Il fallait en plus rester dans l'univers graphique
+              existant du festival, ce qui limitait pas mal nos envies de création.</p>
+            </div>
+            <div class="qa">
+              <h4>3. L'étincelle</h4>
+              <p>On a arrêté de raisonner post par post pour construire des séries : un
+              gabarit reconnaissable par type de contenu, avec l'information pratique
+              toujours placée au même endroit, en gardant la vidéo pour les moments
+              qui le méritent vraiment. La charte du festival, qu'on subissait au
+              début, est finalement ce qui rend l'ensemble cohérent.</p>
+            </div>
+            <div class="qa">
+              <h4>4. Le réglage pour la suite</h4>
+              <p>Sur ce genre de communication au long cours, je commencerai désormais
+              par poser les gabarits et le calendrier éditorial avant de produire le
+              premier visuel. C'est ce qui nous permet aujourd'hui de suivre le rythme
+              sans que l'ensemble parte dans tous les sens.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ===== STAGE MMI1 ===== -->
+      <article class="carnet reveal" id="stage">
+        <div class="carnet-head" role="button" tabindex="0">
+          <figure><img src="assets/stage.png" onerror="this.onerror=null;this.src='https://d8j0ntlcm91z4.cloudfront.net/user_2vNFJg4NA3SqAF7NmRoycnlvAan/hf_20260901_222343_5d1a1e1d-1908-4860-b9a8-3c09b42da9bb.png'" alt="Illustration craie : caméra de plateau télé, clap et projecteurs"></figure>
+          <div class="meta">
+            <div class="sae-num">Stage MMI 1</div>
+            <h3>Vidéaste à la DINUM</h3>
+            <p class="pitch">Stage au sein de la Direction du Numérique et de la Modernisation
+            du gouvernement de la Nouvelle-Calédonie, dans l'équipe Mission Transformation
+            Numérique : concevoir, tourner et monter des vidéos de promotion pour les
+            services publics numériques comme servicepublic.nc et NC Connect.</p>
+            <div class="ac-badges">
+              <span class="ac">AC25.04 : Collaborer au sein des organisations</span>
+              <span class="ac">AC25.05 : Maîtriser les codes des productions écrites et orales professionnelles</span>
+            </div>
+            <span class="toggle">+</span>
+          </div>
+        </div>
+        <div class="carnet-body">
+          <div class="inner">
+<div class="qa media-block">
+              <h4>Le stage en images</h4>
+              <div class="carousel">
+                <button class="car-btn prev" type="button" aria-label="Précédent">&#8249;</button>
+                <div class="car-track">
+                <figure class="car-item"><video src="media/stage%20MMI%201/Service%20publicNC-web.mp4" controls preload="metadata"></video></figure>
+                <figure class="car-item"><video src="media/stage%20MMI%201/Post%20It%20LAND%20v2%20+logo%20opao-web.mp4" controls preload="metadata"></video></figure>
+                <figure class="car-item"><img src="media/stage%20MMI%201/Capture%20d’écran%202026-09-27%20à%2022.57.05.png" alt="" loading="lazy"></figure>
+                <figure class="car-item"><img src="media/stage%20MMI%201/Capture%20d’écran%202026-09-27%20à%2022.57.14.png" alt="" loading="lazy"></figure>
+                </div>
+                <button class="car-btn next" type="button" aria-label="Suivant">&#8250;</button>
+              </div>
+            </div>
+            <div class="qa">
+              <h4>1. La pièce maîtresse</h4>
+              <p>On a fait appel à moi pour un rôle créatif au sein de l'équipe MTN :
+              concevoir des vidéos qui valorisent des produits numériques du
+              gouvernement, servicepublic.nc pour un public jeune et NC Connect pour
+              le grand public, de l'écriture du scénario jusqu'à la post-production.
+              L'enjeu était de tenir les codes d'un établissement public tout en
+              défendant ma propre direction artistique, validée à chaque étape par ma
+              tutrice.</p>
+            </div>
+            <div class="qa">
+              <h4>2. Où l'engrenage a grippé</h4>
+              <p>L'administration n'a tout simplement pas d'équipement audiovisuel.
+              J'ai tourné avec un vieil appareil photo récupéré sur place, le vent a
+              rendu le son inutilisable sur une partie des prises aux canons de
+              Ouémo, et la suite Adobe n'était plus disponible suite aux
+              changements de licences à l'université. Impossible de travailler comme
+              j'en avais l'habitude.</p>
+            </div>
+            <div class="qa">
+              <h4>3. L'étincelle</h4>
+              <p>J'ai fait avec les moyens du bord. L'image a été rattrapée en
+              post-production, les voix ont été redoublées par-dessus les prises trop
+              ventées, et j'ai basculé sur DaVinci Resolve pour les incrustations 3D
+              après pas mal d'heures de tutoriels. La première vidéo a été bouclée en
+              huit jours ouvrés, la seconde en douze, et les deux ont été validées par
+              l'équipe.</p>
+            </div>
+            <div class="qa">
+              <h4>4. Le réglage pour la suite</h4>
+              <p>De la contrainte naît la créativité : c'est la vraie leçon de ce
+              stage. Je prépare maintenant chaque tournage avec un plan B pour le
+              matériel et le son, et je ne dépends plus d'un seul logiciel de montage.
+              J'ai aussi compris que le service public n'est pas l'environnement où je
+              me projette à long terme, mais le défi créatif, lui, m'a beaucoup
+              apporté.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="sig"><img src="assets/logo-opao.png" alt="OPAO Motion"></div>
+            <p class="fine">Portfolio SAÉ 310 · BUT MMI · IUT de l'Université de la Nouvelle-Calédonie · Nouméa</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
